@@ -1,10 +1,13 @@
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <div className="headerContainer">
       <div className="header">
-        <h1>Neo Nomad</h1>
+        <Link to="/" className="headerBrand">
+          Neo Nomad
+        </Link>
       </div>
     </div>
   );

@@ -15,8 +15,11 @@ function LoginForm() {
           <div className="form">
             <p>Email</p>
             <input type="email" />
-            <p>
-              Password <Link>Forgot password?</Link>
+            <p className=" passwordtext">
+              Password{" "}
+              <Link className="forgotLink" to="/forgotpass">
+                Forgot your password?
+              </Link>
             </p>
             <input type="password" />
             <button className="formBtn">

@@ -7,6 +7,7 @@ import Login from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
 import Sidebar2 from "./components/Sidebar2/Sidebar2";
 import Header from "./components/Header/Header";
+import Forgot from "./pages/Forgot/Forgot";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/forgotpass" element={<Forgot />} />
         </Routes>
       </BrowserRouter>
     </>
