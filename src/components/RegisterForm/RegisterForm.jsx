@@ -2,8 +2,62 @@ import "./RegisterForm.css";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
+import validation from "../../context/formContext";
+import { useState } from "react";
+import axios from "axios";
 
 function RegisterForm() {
+  const [userData, setUserData] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setUserData({
+      ...userData,
+      [name]: value,
+    });
+
+    setErrors(
+      validation({
+        ...userData,
+        [name]: value,
+      })
+    );
+  };
+
+  // const navigate = useNavigate();
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const user = {
+      name: "Jose",
+      email: "eljose11@jose.com",
+      password: "jose1234",
+    };
+    axios
+      .post("http://localhost:3001/auth/signup", user)
+      .then((respuesta) => {
+        console.log(respuesta.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    // try {
+    //   console.log("PERRO");
+    // } catch (error) {
+    //   console.log(error);
+    // }
+  };
+
   return (
     <div className="registerFormContainer">
       <div className="registerFormWrapper">
@@ -20,12 +74,13 @@ function RegisterForm() {
         <main className="registerFromMain">
           <div className="form">
             <p>Name</p>
-            <input type="text" required />
+            <input onChange={handleChange} type="text" required />
+            {errors.name ? <p>{errors.name}</p> : ""}
             <p>Email</p>
-            <input type="email" required />
+            <input onChange={handleChange} type="email" required />
             <p>Password</p>
-            <input type="password" required />
-            <button className="formBtn">
+            <input onChange={handleChange} type="password" required />
+            <button className="formBtn" onClick={handleSubmit}>
               Create Account
               <AiOutlineArrowRight />
             </button>

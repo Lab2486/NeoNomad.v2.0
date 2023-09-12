@@ -1,6 +1,7 @@
 import "./LoginForm.css";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
+import { Link } from "react-router-dom";
 
 function LoginForm() {
   return (
@@ -14,6 +15,10 @@ function LoginForm() {
           <div className="form">
             <p>Email</p>
             <input type="email" />
+            <p>
+              Password <Link>Forgot password?</Link>
+            </p>
+            <input type="password" />
             <button className="formBtn">
               Continue
               <AiOutlineArrowRight />
