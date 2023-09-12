@@ -1,0 +1,32 @@
+.userbarContainer {
+  background-color: black;
+  height: 50px;
+  margin-left: 12%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  width: 88%;
+}
+.userbarWrapper {
+  width: 100%;
+  height: 100%;
+}
+.userbarNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.userbarLInks {
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  gap: 10px;
+}
+.userbarIcons {
+  font-size: 30px;
+}

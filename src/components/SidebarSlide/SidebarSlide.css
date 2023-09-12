@@ -1,0 +1,46 @@
+/* .sidebarSlideContainer {
+  display: flex;
+  width: 100%;
+}
+
+.sidebarSlide {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  transition: all 0.5s;
+}
+.topSection {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+.sidebarSlidelogo {
+  width: 50px;
+  border-radius: 10px;
+}
+.sidebarSlideBars {
+  font-size: 25px;
+  display: flex;
+  margin-left: 60px;
+}
+.link {
+  display: flex;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  gap: 17px;
+  transition: all 0.5s;
+}
+.link:hover {
+  background-color: darkgray;
+  color: black;
+  transition: all 0.5s;
+}
+.active {
+  background-color: darkgray;
+  color: black;
+}
+.icon,
+.linkText {
+  font-size: 1.2rem;
+} */
