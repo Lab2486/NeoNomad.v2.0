@@ -92,6 +92,9 @@ export const SidebarWrapper = styled.div`
       justify-content: space-between;
       align-items: center;
       cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
     }
 
     .dropdown_list {
