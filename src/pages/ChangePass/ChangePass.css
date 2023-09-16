@@ -1,0 +1,7 @@
+.changepassPageCont{
+    width: auto;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    padding-top: 50px;
+}
