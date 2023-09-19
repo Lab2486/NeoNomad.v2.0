@@ -20,7 +20,7 @@
 .loginFromHeader h2 {
   font-size: 1.3rem;
   font-weight: 600;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   color: rgb(234, 234, 234);
 }
 .formLogo {
@@ -96,4 +96,9 @@
   width: 100%;
   justify-content: center;
   height: 40px;
+}
+@media (max-width: 768px) {
+  .loginFormWrapper {
+    width: 80%;
+  }
 }

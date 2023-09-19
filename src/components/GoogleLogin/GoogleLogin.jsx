@@ -1,21 +1,19 @@
-import { GoogleLogin } from "@react-oauth/google";
+import { useGoogleLogin } from "@react-oauth/google";
+import "./GoogleLogin.css";
+import { FcGoogle } from "react-icons/fc";
 
 function GoogleLoginBtn() {
+  const login = useGoogleLogin({
+    onSuccess: (tokenResponse) => console.log(tokenResponse),
+    flow: "auth-code",
+  });
   return (
-    <div>
-      <GoogleLogin
-        shape="rectangle"
-        width="400"
-        useOneTap
-        onSuccess={(credentialResponse) => {
-          console.log(credentialResponse);
-        }}
-        onError={() => {
-          console.log("Login Failed");
-        }}
-      />
-      ;
-    </div>
+    <>
+      <button className="googleBtn" onClick={() => login()}>
+        <FcGoogle />
+        Acceder con Google
+      </button>
+    </>
   );
 }
 

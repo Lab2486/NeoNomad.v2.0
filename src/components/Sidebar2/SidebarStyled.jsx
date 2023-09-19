@@ -73,7 +73,7 @@ export const SidebarWrapper = styled.div`
 
     ul {
       display: grid;
-      gap: 1.4rem;
+      gap: 2rem;
       list-style: none;
 
       a {

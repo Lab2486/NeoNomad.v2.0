@@ -67,3 +67,8 @@
   height: 1px;
   background-color: grey;
 }
+@media (max-width: 768px) {
+  .forgotFormWrapper {
+    width: 80%;
+  }
+}

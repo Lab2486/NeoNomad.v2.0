@@ -18,6 +18,9 @@
   height: 40px;
   position: fixed;
   top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .headerBrand {
   font-size: 2rem;
@@ -25,4 +28,9 @@
   font-weight: 600;
   text-decoration: none;
   color: white;
+}
+@media (max-width: 768px) {
+  .headerBrand {
+    font-size: 1.5rem;
+  }
 }

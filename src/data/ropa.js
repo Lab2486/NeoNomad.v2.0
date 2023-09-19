@@ -5,6 +5,7 @@ export const ropa = [
     nombre: "Ghost Attack",
     imagenFrente: "/ghostAttackRemeraFrente.png",
     imagenAtras: "/ghostAttackRemeraAtras.png",
+    precio: "€20",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const ropa = [
     nombre: "Inner Void",
     imagenFrente: "/absentInnerVoidRemeraFrente.png",
     imagenAtras: "/absentInnerVoidRemeraAtras.png",
+    precio: "€20",
   },
   {
     id: 3,
@@ -19,5 +21,14 @@ export const ropa = [
     nombre: "Lain",
     imagenFrente: "/lainRemeraFrente.png",
     imagenAtras: "/lainRemeraAtras.png",
+    precio: "€20",
+  },
+  {
+    id: 4,
+    categoria: "remera",
+    nombre: "Digital Virus",
+    imagenFrente: "/lainRemeraFrente.png",
+    imagenAtras: "/DIGITALVIRUS-BLACK.png",
+    precio: "€20",
   },
 ];

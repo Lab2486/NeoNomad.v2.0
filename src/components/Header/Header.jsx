@@ -8,6 +8,12 @@ function Header() {
         <Link to="/" className="headerBrand">
           Neo Nomad
         </Link>
+        <Link to="/login">Login</Link>
+        <Link to="/signup">Signup</Link>
+        <Link to="/forgotpass">ForgotPass</Link>
+        <Link to="/resetpassword">ResetPass</Link>
+        <Link></Link>
+        <Link></Link>
       </div>
     </div>
   );
