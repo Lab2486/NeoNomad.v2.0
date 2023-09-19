@@ -7,7 +7,7 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 
 function RegisterForm() {
   const initialData = {
-    nombre: "",
+    name: "",
     email: "",
     password: "",
   };
@@ -17,10 +17,10 @@ function RegisterForm() {
     let regexName = new RegExp(/^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/);
     let regexEmail = new RegExp(/^[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/);
 
-    if (!form.nombre.trim()) {
-      errors.nombre = 'El campo "Nombre" no debe ser vacio.';
-    } else if (!regexName.test(form.nombre)) {
-      errors.nombre = 'El campo "Nombre" solo acepta letras y espacios.';
+    if (!form.name.trim()) {
+      errors.name = 'El campo "Name" no debe ser vacio.';
+    } else if (!regexName.test(form.name)) {
+      errors.name = 'El campo "Name" solo acepta letras y espacios.';
     }
 
     if (!form.email.trim()) {
@@ -63,14 +63,13 @@ function RegisterForm() {
               <input
                 type="text"
                 // required
-                name="nombre"
-                value={form.nombre}
+                name="name"
+                value={form.name}
                 onChange={handleChange}
               />
-
-              {errors.nombre && (
+              {errors.name && (
                 <div className="alert alert-danger p-1 " role="alert">
-                  {errors.nombre}
+                  {errors.name}
                 </div>
               )}
 
