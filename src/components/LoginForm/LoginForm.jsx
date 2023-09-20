@@ -30,7 +30,7 @@ function LoginForm() {
     return errors;
   };
 
-  const { form, errors, handleChange, handleSubmit } = useForm(
+  const { form, errors, handleChange, handleSubmit, handleLogin } = useForm(
     initialData,
     onValidate
   );
@@ -44,7 +44,7 @@ function LoginForm() {
             <h2>Log in to Neo Nomad</h2>
           </header>
           <main className="loginFromMain">
-            <form onSubmit={handleSubmit} className="form">
+            <form onSubmit={handleLogin} className="form">
               <label>Email</label>
               <input
                 type="email"

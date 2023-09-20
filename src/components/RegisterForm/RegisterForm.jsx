@@ -38,7 +38,7 @@ function RegisterForm() {
     return errors;
   };
 
-  const { form, errors, handleChange, handleSubmit } = useForm(
+  const { form, errors, handleChange, handleSubmit, handleRegister } = useForm(
     initialData,
     onValidate
   );
@@ -58,7 +58,7 @@ function RegisterForm() {
             </h3>
           </header>
           <main className="registerFromMain">
-            <form className="form" onSubmit={handleSubmit}>
+            <form className="form" onSubmit={handleRegister}>
               <label>Name</label>
               <input
                 type="text"
