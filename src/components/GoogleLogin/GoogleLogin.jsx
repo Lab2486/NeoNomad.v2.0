@@ -8,7 +8,7 @@ function GoogleLoginBtn() {
   const login = useGoogleLogin({
     onSuccess: (tokenResponse) => {
       // Convertir el objeto 'tokenResponse' a una cadena de texto
-      var tokenString = JSON.stringify(tokenResponse);
+      let tokenString = JSON.stringify(tokenResponse);
 
       // Guardar la cadena de texto en localStorage
       localStorage.setItem("token", tokenString);

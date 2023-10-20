@@ -1,0 +1,10 @@
+.card {
+  width: 24%;
+  border: none;
+  text-decoration: none;
+}
+.cateCardTitle {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0 0 10px black;
+}

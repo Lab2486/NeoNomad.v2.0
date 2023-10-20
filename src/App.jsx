@@ -12,6 +12,7 @@ import ResetPasswordPage from "./pages/ResetPasswordPage/ResetPasswordPage";
 import Profile from "./pages/Profile/Profile";
 
 const token = localStorage.getItem("token");
+const authorization = localStorage.getItem("authorization");
 
 function App() {
   return (
@@ -21,7 +22,10 @@ function App() {
         <Sidebar2 />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={token ? <Profile /> : <Login />} />
+          <Route
+            path="/login"
+            element={token || authorization ? <Profile /> : <Login />}
+          />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/forgotpass" element={<Forgot />} />
           <Route path="/itemdetail" element={<ItemDetailPage />} />

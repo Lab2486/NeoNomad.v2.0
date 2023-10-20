@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import "./ForgotPassForm.css";
-
 import useForm from "../../hooks/useForm";
 
 function ForgotPassForm() {
   const initialData = {
     email: "",
   };
+ 
   const onValidate = (form) => {
     const errors = {};
 
@@ -20,10 +20,9 @@ function ForgotPassForm() {
 
     return errors;
   };
-  const { form, errors, handleChange, handleSubmit } = useForm(
-    initialData,
-    onValidate
-  );
+  const { form, errors, handleChange, handleSubmit, handleForgotPass } =
+    useForm(initialData, onValidate);
+
   return (
     <div className="forgotFormContainer">
       <div className="forgotFormWrapper">
@@ -32,7 +31,7 @@ function ForgotPassForm() {
           <h2>Add your email to recive confirmation of password reset</h2>
         </header>
         <main className="forgotFromMain">
-          <form onSubmit={handleSubmit} className="forgotForm">
+          <form onSubmit={handleForgotPass} className="forgotForm">
             <label>Email</label>
             <input
               type="email"

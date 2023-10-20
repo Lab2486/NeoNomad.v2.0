@@ -1,0 +1,26 @@
+.bannerContainer {
+  background-color: rgb(10, 10, 10);
+  display: flex;
+  padding: 50px 0;
+}
+.bannerInfo {
+  width: 50%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.bannerTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  height: 70%;
+  display: grid;
+  place-items: center;
+}
+.bannerParrafo {
+  font-size: 2rem;
+  height: 100%;
+  font-weight: 500;
+
+  display: grid;
+  place-items: center;
+}

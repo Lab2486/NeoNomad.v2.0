@@ -1,0 +1,9 @@
+.carousel {
+  width: 50%;
+  display: grid;
+  place-items: center;
+}
+.carrouselImg {
+  width: 90%;
+  margin: 20px;
+}

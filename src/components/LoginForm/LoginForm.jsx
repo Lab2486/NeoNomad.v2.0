@@ -10,6 +10,7 @@ function LoginForm() {
     email: "",
     password: "",
   };
+
   const onValidate = (form) => {
     const errors = {};
 

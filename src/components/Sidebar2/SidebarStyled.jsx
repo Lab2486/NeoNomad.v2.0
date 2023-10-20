@@ -131,17 +131,6 @@ export const SidebarToggler = styled.div`
     transition: all 0.3s ease;
   }
 
-  .parpadea {
-    animation-name: parpadeo;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-
-    -webkit-animation-name: parpadeo;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-  }
   @-moz-keyframes parpadeo {
     0% {
       opacity: 1;
@@ -177,7 +166,17 @@ export const SidebarToggler = styled.div`
       opacity: 1;
     }
   }
+  .parpadea {
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
   &:hover span {
     opacity: 1;
   }
