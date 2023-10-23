@@ -1,0 +1,6 @@
+.itemDetailContainer {
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}

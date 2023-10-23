@@ -4,7 +4,7 @@ const images = [
   "/ci6.jpg",
   "/ci3.jpg",
   "/ci5.jpg",
-  "/ci3.jpg",
+  "/ci2.jpg",
   "/ci7.jpg",
   "/ci4.jpg",
   // añade más URLs de imágenes aquí

@@ -1,0 +1,48 @@
+.carouselDetCont {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.carouselDet {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.carouselDetImagen {
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 0 10px 0.5px #ffffff26;
+  border-radius: 5px;
+}
+.carouselDetTitle {
+  width: 100%;
+  text-align: center;
+}
+.btnCarousel {
+  height: 10px;
+  margin: 10px;
+  background: none;
+  color: white;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .btnCarousel {
+    margin: 0;
+    border: none;
+  }
+
+  .carouselDetImagen {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 330px) {
+  .btn {
+    display: none;
+  }
+}

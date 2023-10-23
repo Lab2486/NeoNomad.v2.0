@@ -6,10 +6,11 @@ import SignUp from "./pages/SignUp/SignUp";
 import Sidebar2 from "./components/Sidebar2/Sidebar2";
 import Header from "./components/Header/Header";
 import Forgot from "./pages/Forgot/Forgot";
-import ItemDetailPage from "./pages/ItemDetailPage/ItemDetailPage";
+
 import ItemList from "./components/ItemList/ItemList";
 import ResetPasswordPage from "./pages/ResetPasswordPage/ResetPasswordPage";
 import Profile from "./pages/Profile/Profile";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 const token = localStorage.getItem("token");
 const authorization = localStorage.getItem("authorization");
@@ -28,7 +29,7 @@ function App() {
           />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/forgotpass" element={<Forgot />} />
-          <Route path="/itemdetail" element={<ItemDetailPage />} />
+          <Route path="product/:id" element={<ItemDetailContainer />} />
           <Route path="/remeras" element={<ItemList />} />
           <Route path="/resetpassword" element={<ResetPasswordPage />} />
         </Routes>

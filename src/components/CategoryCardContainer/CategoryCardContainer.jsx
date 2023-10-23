@@ -3,10 +3,10 @@ import CategoryCards from "../CategoryCards/CategoryCards";
 import "./CategoryCardContainer.css";
 
 const categoriImgs = [
-  { title: "Remeras", imagen: "/ci1.jpg", link: "/Remeras" },
-  { title: "Buzos", imagen: "/ci2.jpg", link: "/Buzos" },
-  { title: "Pantalones", imagen: "/ci3.jpg", link: "/Pantalones" },
-  { title: "Accesorios", imagen: "/ci4.jpg", link: "/Accesorios" },
+  { title: "Remeras", imagen: "/ci1.jpg", link: "/remeras" },
+  { title: "Buzos", imagen: "/ci2.jpg", link: "/buzos" },
+  { title: "Pantalones", imagen: "/ci3.jpg", link: "/pantalones" },
+  { title: "Accesorios", imagen: "/ci4.jpg", link: "/accesorios" },
 ];
 
 function CategoryCardContainer() {
